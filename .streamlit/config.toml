@@ -1,0 +1,5 @@
+[theme]
+primaryColor = "#FF6B6B"
+[server]
+enableCORS = false
+enableXsrfProtection = false
