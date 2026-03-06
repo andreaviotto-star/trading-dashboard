@@ -1661,7 +1661,7 @@ with tab2:
 <<<<<<< HEAD
     st.plotly_chart(fig_bar, use_container_width=True, key="chart_1")
 =======
-    st.plotly_chart(fig_bar, use_container_width=True)
+    st.plotly_chart(fig_bar, use_container_width=True, key="chart_1")
 >>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
     st.plotly_chart(plot_monthly_heatmap(port_eq, "Portfolio"), use_container_width=True)
@@ -1695,7 +1695,7 @@ with tab2:
 <<<<<<< HEAD
                     st.plotly_chart(fig_b, use_container_width=True, key="chart_2")
 =======
-                    st.plotly_chart(fig_b, use_container_width=True)
+                    st.plotly_chart(fig_b, use_container_width=True, key="chart_2")
 >>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
     else:
         st.info("No significant drawdown episodes in this lookback window.")
@@ -1829,7 +1829,7 @@ with tab3:
 <<<<<<< HEAD
                 st.plotly_chart(fig_r, use_container_width=True, key="chart_4")
 =======
-                st.plotly_chart(fig_r, use_container_width=True)
+                st.plotly_chart(fig_r, use_container_width=True, key="chart_3")
 >>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
     st.divider()
@@ -1866,7 +1866,7 @@ with tab3:
 <<<<<<< HEAD
         st.plotly_chart(fig_sc, use_container_width=True, key="chart_5")
 =======
-        st.plotly_chart(fig_sc, use_container_width=True)
+        st.plotly_chart(fig_sc, use_container_width=True, key="chart_4")
 >>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
 
@@ -1929,7 +1929,7 @@ with tab4:
 <<<<<<< HEAD
             st.plotly_chart(fig_rsh, use_container_width=True, key="chart_6")
 =======
-            st.plotly_chart(fig_rsh, use_container_width=True)
+            st.plotly_chart(fig_rsh, use_container_width=True, key="chart_5")
 >>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
         with st.expander("📈 Rolling Profit Factor over time"):
@@ -1949,7 +1949,7 @@ with tab4:
 <<<<<<< HEAD
             st.plotly_chart(fig_rpf, use_container_width=True, key="chart_7")
 =======
-            st.plotly_chart(fig_rpf, use_container_width=True)
+            st.plotly_chart(fig_rpf, use_container_width=True, key="chart_6")
 >>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
     st.divider()
@@ -2014,7 +2014,7 @@ with tab4:
 <<<<<<< HEAD
             st.plotly_chart(fig_mc, use_container_width=True, key="chart_8")
 =======
-            st.plotly_chart(fig_mc, use_container_width=True)
+            st.plotly_chart(fig_mc, use_container_width=True, key="chart_7")
 >>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
             final = mc_res["paths"].iloc[-1]
@@ -2144,7 +2144,7 @@ with tab4:
 <<<<<<< HEAD
             st.plotly_chart(fig_reg, use_container_width=True, key="chart_9")
 =======
-            st.plotly_chart(fig_reg, use_container_width=True)
+            st.plotly_chart(fig_reg, use_container_width=True, key="chart_8")
 >>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
             with st.expander("🔄 Regime Transition Probabilities"):
@@ -2163,7 +2163,7 @@ with tab4:
 <<<<<<< HEAD
                     st.plotly_chart(fig_t, use_container_width=True, key="chart_10")
 =======
-                    st.plotly_chart(fig_t, use_container_width=True)
+                    st.plotly_chart(fig_t, use_container_width=True, key="chart_9")
 >>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
                     persist = {r: trans_df.loc[r, r] for r in trans_df.index}
                     st.markdown(
