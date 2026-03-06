@@ -1658,7 +1658,11 @@ with tab2:
     fig_bar.update_layout(template=THEME, height=max(300, 38 * len(cs)),
                            margin=dict(l=0, r=70, t=10, b=0),
                            xaxis_title="P&L Contribution ($)")
+<<<<<<< HEAD
     st.plotly_chart(fig_bar, use_container_width=True, key="chart_1")
+=======
+    st.plotly_chart(fig_bar, use_container_width=True)
+>>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
     st.plotly_chart(plot_monthly_heatmap(port_eq, "Portfolio"), use_container_width=True)
 
@@ -1688,7 +1692,11 @@ with tab2:
                                          height=max(200, 35 * len(bkeys)),
                                          margin=dict(l=0, r=60, t=10, b=0),
                                          xaxis_title="Blame (%)")
+<<<<<<< HEAD
                     st.plotly_chart(fig_b, use_container_width=True, key="chart_2")
+=======
+                    st.plotly_chart(fig_b, use_container_width=True)
+>>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
     else:
         st.info("No significant drawdown episodes in this lookback window.")
 
@@ -1818,7 +1826,11 @@ with tab3:
                 fig_r.update_layout(template=THEME, height=320,
                                      margin=dict(l=0, r=0, t=10, b=0),
                                      yaxis_title="Cum. P&L ($)")
+<<<<<<< HEAD
                 st.plotly_chart(fig_r, use_container_width=True, key="chart_4")
+=======
+                st.plotly_chart(fig_r, use_container_width=True)
+>>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
     st.divider()
 
@@ -1851,7 +1863,11 @@ with tab3:
                             hover_data={"Ann Return ($)": True, "_sz": False})
         fig_sc.update_traces(textposition="top center")
         fig_sc.update_layout(height=520, margin=dict(l=0, r=0, t=40, b=0))
+<<<<<<< HEAD
         st.plotly_chart(fig_sc, use_container_width=True, key="chart_5")
+=======
+        st.plotly_chart(fig_sc, use_container_width=True)
+>>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -1910,7 +1926,11 @@ with tab4:
                                    margin=dict(l=0, r=0, t=10, b=0),
                                    yaxis_title="Rolling Sharpe",
                                    legend=dict(font=dict(size=10)))
+<<<<<<< HEAD
             st.plotly_chart(fig_rsh, use_container_width=True, key="chart_6")
+=======
+            st.plotly_chart(fig_rsh, use_container_width=True)
+>>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
         with st.expander("📈 Rolling Profit Factor over time"):
             fig_rpf = go.Figure()
@@ -1926,7 +1946,11 @@ with tab4:
                                    margin=dict(l=0, r=0, t=10, b=0),
                                    yaxis_title="Rolling PF",
                                    legend=dict(font=dict(size=10)))
+<<<<<<< HEAD
             st.plotly_chart(fig_rpf, use_container_width=True, key="chart_7")
+=======
+            st.plotly_chart(fig_rpf, use_container_width=True)
+>>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
     st.divider()
 
@@ -1987,7 +2011,11 @@ with tab4:
                                   title=f"Monte Carlo: {mc_sims:,} × {hor_lbl}",
                                   xaxis_title="Trading Days Forward",
                                   yaxis_title="Projected P&L ($)")
+<<<<<<< HEAD
             st.plotly_chart(fig_mc, use_container_width=True, key="chart_8")
+=======
+            st.plotly_chart(fig_mc, use_container_width=True)
+>>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
             final = mc_res["paths"].iloc[-1]
             ec    = st.columns(5)
@@ -2113,7 +2141,11 @@ with tab4:
                                    margin=dict(l=0, r=0, t=10, b=0),
                                    yaxis_title="Ann. Vol ($)",
                                    legend=dict(orientation="h", y=1.05))
+<<<<<<< HEAD
             st.plotly_chart(fig_reg, use_container_width=True, key="chart_9")
+=======
+            st.plotly_chart(fig_reg, use_container_width=True)
+>>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
 
             with st.expander("🔄 Regime Transition Probabilities"):
                 trans_df = compute_regime_transitions(regime_df)
@@ -2128,7 +2160,11 @@ with tab4:
                         colorbar=dict(title="P")))
                     fig_t.update_layout(template=THEME, height=280,
                                          margin=dict(l=0, r=0, t=10, b=0))
+<<<<<<< HEAD
                     st.plotly_chart(fig_t, use_container_width=True, key="chart_10")
+=======
+                    st.plotly_chart(fig_t, use_container_width=True)
+>>>>>>> a6594586b7874a4472485e86ae7be60b709d3e57
                     persist = {r: trans_df.loc[r, r] for r in trans_df.index}
                     st.markdown(
                         f"**Persistence:** Low Vol stays {persist.get('Low Vol',0):.0%} · "
