@@ -1688,7 +1688,7 @@ with tab2:
                                          height=max(200, 35 * len(bkeys)),
                                          margin=dict(l=0, r=60, t=10, b=0),
                                          xaxis_title="Blame (%)")
-                    st.plotly_chart(fig_b, use_container_width=True, key="chart_2")
+                    st.plotly_chart(fig_b, use_container_width=True, key=f"chart_2_{ep_i}")
     else:
         st.info("No significant drawdown episodes in this lookback window.")
 
