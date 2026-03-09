@@ -1795,7 +1795,7 @@ with tab3:
     st.caption("Subsets selected by different risk/return criteria.")
 
     reccos = recommend_portfolios(corr_df, systems)
-    for rec in reccos:
+    for rec_i, rec in enumerate(reccos):
         with st.expander(f"{rec['name']} — {rec['description']}"):
             rec_stems = [s for s in rec["systems"] if s in all_curves]
             if not rec_stems:
@@ -1818,7 +1818,7 @@ with tab3:
                 fig_r.update_layout(template=THEME, height=320,
                                      margin=dict(l=0, r=0, t=10, b=0),
                                      yaxis_title="Cum. P&L ($)")
-                st.plotly_chart(fig_r, use_container_width=True, key="chart_4")
+                st.plotly_chart(fig_r, use_container_width=True, key=f"chart_4_{rec_i}")
 
     st.divider()
 
