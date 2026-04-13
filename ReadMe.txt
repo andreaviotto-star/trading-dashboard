@@ -5,6 +5,7 @@ ES bout reg - short: 0 MES
 ES trend stoc - long: 1 MES
 ES trend stoc - short: 3 MES
 ES donchian short: 6 MES
+ES deviaz VIX - long e short: 3 MES
 NQ bout continua - short: 1 NQ
 NQ trend stoc - long: 1 MNQ
 NQ trend stoc - short: 3 MNQ
